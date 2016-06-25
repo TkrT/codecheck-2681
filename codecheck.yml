@@ -1,0 +1,10 @@
+build: 
+  - npm install
+  - pip3 install bottle
+  - pip3 install asyncio
+  - pip3 install websockets
+web:
+  command: python3 app/server.py
+  port: 9000
+  console: true 
+test: mocha tests --recursive
